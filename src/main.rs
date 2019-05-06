@@ -1,3 +1,15 @@
+mod sound {
+    pub mod instrument {
+        pub fn clarinet() {
+            // function body
+        }
+    }
+}
+
+// this statement means you don't have to
+// specify the path of the `instrument` module all the time
+use crate::sound::instrument;
+
 #[allow(dead_code)]
 mod plant {
     // the struct is public
@@ -37,4 +49,6 @@ fn main() {
     
     let order1 = menu::Appetizer::Soup;
     let order2 = menu::Appetizer::Salad;
+
+    instrument::clarinet();
 }
