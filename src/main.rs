@@ -1,3 +1,6 @@
+// we can use an external file for a module in this crate
+mod candy;
+
 mod sound {
     pub mod instrument {
         pub fn clarinet() {
@@ -85,4 +88,6 @@ fn main() {
 
     // this is allowed because of `pub use` in the performance_group module
     performance_group::instrument::clarinet();
+
+    crate::candy::sour_patch::eat();
 }
