@@ -90,4 +90,5 @@ fn main() {
     performance_group::instrument::clarinet();
 
     crate::candy::sour_patch::eat();
+    crate::candy::candy_corn::eat();
 }
